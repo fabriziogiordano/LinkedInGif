@@ -6,13 +6,13 @@ import { DivBottom } from "./components/DivBottom";
 import { z } from "zod";
 import { zColor } from "@remotion/zod-types";
 
-export const MyCompositionSchema = z.object({
+export const Composition1Schema = z.object({
 	titleText: z.string(),
 	titleColor: zColor(),
 	backGroundImage: z.string(),
 });
 
-export const MyComposition: React.FC<z.infer<typeof MyCompositionSchema>> = ({
+export const Composition1: React.FC<z.infer<typeof Composition1Schema>> = ({
 	titleText: propOne,
 	titleColor: propTwo,
 	backGroundImage: propThree,

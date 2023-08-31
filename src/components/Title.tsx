@@ -6,7 +6,6 @@ export const Title: React.FC<{
 	titleColor: string;
 }> = ({ titleText, titleColor }) => {
 	const frame = useCurrentFrame();
-
 	const { height, fps } = useVideoConfig();
 
 	const opacity = interpolate(frame, [20, 40], [0, 1], {
