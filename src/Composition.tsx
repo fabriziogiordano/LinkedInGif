@@ -1,28 +1,31 @@
-import {AbsoluteFill} from 'remotion';
-import {Logo} from './Logo';
-import {Subtitle} from './Subtitle';
-import {Title} from './Title';
-import {z} from 'zod';
-import {zColor} from '@remotion/zod-types';
+import { AbsoluteFill } from "remotion";
+import { Bg } from "./components/Bg";
+import { Title } from "./components/Title";
+import { DivBottom } from "./components/DivBottom";
 
-export const myCompSchema = z.object({
+import { z } from "zod";
+import { zColor } from "@remotion/zod-types";
+
+export const MyCompositionSchema = z.object({
 	titleText: z.string(),
 	titleColor: zColor(),
-	logoColor: zColor(),
 });
 
-export const MyComposition: React.FC<z.infer<typeof myCompSchema>> = ({
+export const MyComposition: React.FC<z.infer<typeof MyCompositionSchema>> = ({
 	titleText: propOne,
 	titleColor: propTwo,
-	logoColor: propThree,
 }) => {
 	return (
-		<AbsoluteFill className="bg-gray-100 items-center justify-center">
-			<div className="m-10" />
-			<Logo logoColor={propThree} />
-			<div className="m-3" />
-			<Title titleText={propOne} titleColor={propTwo} />
-			<Subtitle />
+		<AbsoluteFill className="bg-gray-100">
+			<AbsoluteFill>
+				<Bg />
+			</AbsoluteFill>
+			<AbsoluteFill>
+				<DivBottom />
+			</AbsoluteFill>
+			<AbsoluteFill>
+				<Title titleText={propOne} titleColor={propTwo} />
+			</AbsoluteFill>
 		</AbsoluteFill>
 	);
 };
