@@ -16,6 +16,7 @@ export const RemotionRoot: React.FC = () => {
 				defaultProps={{
 					titleText: "Leveraging AI for Product Growth: Future Trends and Predictions",
 					titleColor: "#FFF",
+					backGroundImage: "leveraging-ai-for-product-growth-future-trends-and-predictions.png"
 				}}
 			/>
 		</>
