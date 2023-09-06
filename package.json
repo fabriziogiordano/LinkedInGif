@@ -7,7 +7,10 @@
   ],
   "scripts": {
     "start": "remotion studio",
-    "build": "remotion render LinkedInPost-3 out/LinkedInPost-3.gif --codec=gif --number-of-gif-loops=0 && ffmpeg -i out/LinkedInPost-3.gif -loop -1 out/LinkedInPost-3.noloop.gif -y",
+    "build": "npm run build:1 && npm run build:2 && npm run build:3",
+    "build:1": "remotion render LinkedInPost-1 out/LinkedInPost-1.gif --codec=gif --number-of-gif-loops=0 && ffmpeg -i out/LinkedInPost-1.gif -loop -1 out/LinkedInPost-1.noloop.gif -y",
+    "build:2": "remotion render LinkedInPost-2 out/LinkedInPost-2.gif --codec=gif --number-of-gif-loops=0 && ffmpeg -i out/LinkedInPost-2.gif -loop -1 out/LinkedInPost-2.noloop.gif -y",
+    "build:3": "remotion render LinkedInPost-3 out/LinkedInPost-3.gif --codec=gif --number-of-gif-loops=0 && ffmpeg -i out/LinkedInPost-3.gif -loop -1 out/LinkedInPost-3.noloop.gif -y",
     "upgrade": "remotion upgrade",
     "test": "eslint src --ext ts,tsx,js,jsx && tsc"
   },
