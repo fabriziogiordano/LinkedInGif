@@ -11,7 +11,7 @@ export const SideBulletPoints: React.FC<{
 		const opacity = interpolate(frame, [20 + delay, 40 + delay], [0, 1], {extrapolateLeft: "clamp",extrapolateRight: "clamp",});
 		return (
 			<Sequence
-				style={{ opacity, position: "absolute", backgroundColor: i % 2 ? "green" : "red", top: `${i*3}rem` }}
+				style={{ opacity, position: "absolute", backgroundColor: i % 2 ? "green" : "red", top: `${i*4}rem` }}
 				from={delay}
 				durationInFrames={Infinity}
 				name={`Sequence-${i}`}

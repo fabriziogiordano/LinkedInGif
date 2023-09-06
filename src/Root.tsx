@@ -52,10 +52,10 @@ export const RemotionRoot: React.FC = () => {
 						titleText: "Leveraging AI for Product Growth: Future Trends and Predictions",
 						titleColor: "#FFF",
 						sideTextList: `
-							Sentence 1
-							Sentence 2
-							Sentence 3
-							Sentence 4
+						📈 Predictive Analysis
+						🧠 Rapid Prototyping
+						🌱 Intelligent Products
+						📊 Real-Time Analytics
 						`,
 					}}
 				/>

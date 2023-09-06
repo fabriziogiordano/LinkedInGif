@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "start": "remotion studio",
-    "build": "remotion render LinkedInPost out/LinkedInPost.gif --codec=gif --number-of-gif-loops=0 && ffmpeg -i out/LinkedInPost.gif -loop -1 out/LinkedInPost.noloop.gif -y",
+    "build": "remotion render LinkedInPost-3 out/LinkedInPost-3.gif --codec=gif --number-of-gif-loops=0 && ffmpeg -i out/LinkedInPost-3.gif -loop -1 out/LinkedInPost-3.noloop.gif -y",
     "upgrade": "remotion upgrade",
     "test": "eslint src --ext ts,tsx,js,jsx && tsc"
   },

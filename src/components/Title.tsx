@@ -27,7 +27,7 @@ export const Title: React.FC<{
 	return (
 		<div
 			style={{ opacity, color: titleColor, transform: `translateY(${entranceOffset}px)` }}
-			className="text-gray-700 text-5xl pl-10 font-bold leading-tight tracking-tighter"
+			className="text-gray-700 text-5xl px-24 font-bold leading-tight tracking-tighter"
 		>
 			{titleText}
 		</div>
